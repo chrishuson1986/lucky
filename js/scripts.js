@@ -13,10 +13,15 @@ $(document).ready(function(){
 
     if(unlucky > lucky){
       $("#unlucky").show();
+      $("#lucky").hide();
+      $("#yousuck").hide();
     } else if (unlucky < lucky){
       $("#lucky").show();
+      $("#unlucky").hide();
     } else {
       $("#yousuck").show();
+      $("#unlucky").hide();
+      $("#lucky").hide();
     }
   });
 });
